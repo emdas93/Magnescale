@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="content" prefHeight="700.0" prefWidth="1024.0" style="-fx-background-color:black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ComController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Region layoutX="37.0" layoutY="111.0" prefHeight="492.0" prefWidth="962.0" style="-fx-border-color:white;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="449.0" layoutX="52.0" layoutY="141.0" stroke="WHITE" strokeType="INSIDE" width="920.0" />
+    <Button fx:id="exitBtn" layoutX="879.0" layoutY="33.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="BACK">
+         <font>
+            <Font size="22.0" />
+         </font></Button>
+  <ComboBox fx:id="portListCombo" layoutX="162.0" layoutY="177.0" prefHeight="50.0" prefWidth="659.0" promptText="SELECT" style="">
+    
+  </ComboBox>
+  <Label alignment="CENTER" layoutX="156.0" layoutY="291.0" prefWidth="300.0" text="Baud rate" textAlignment="LEFT" textFill="BLUE" wrapText="false">
+    <font>
+      <Font size="47.0" fx:id="x1" />
+    </font>
+  </Label>
+  <Label alignment="CENTER" layoutX="156.0" layoutY="366.0" prefWidth="300.0" text="Data bits" textAlignment="LEFT" textFill="BLUE" wrapText="false">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+  <Label alignment="CENTER" layoutX="156.0" layoutY="442.0" prefWidth="300.0" text="Parity bits" textAlignment="LEFT" textFill="BLUE" wrapText="false">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+  <Label alignment="CENTER" layoutX="156.0" layoutY="510.0" prefWidth="300.0" text="Flow control" textAlignment="LEFT" textFill="BLUE" wrapText="false">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+  <ComboBox fx:id="baudRate" layoutX="478.0" layoutY="294.0" prefHeight="50.0" prefWidth="330.0" promptText="SELECT" style="">
+    <items>
+      <FXCollections fx:factory="observableArrayList">
+        <String fx:value="Item 1" />
+        <String fx:value="Item 2" />
+        <String fx:value="Item 3" />
+      </FXCollections>
+    </items>
+  </ComboBox>
+  <ComboBox fx:id="dataBits" layoutX="478.0" layoutY="369.0" prefHeight="50.0" prefWidth="330.0" promptText="SELECT" style="">
+    <items>
+      <FXCollections fx:factory="observableArrayList">
+        <String fx:value="Item 1" />
+        <String fx:value="Item 2" />
+        <String fx:value="Item 3" />
+      </FXCollections>
+    </items>
+  </ComboBox>
+  <ComboBox fx:id="parityBits" layoutX="478.0" layoutY="445.0" prefHeight="50.0" prefWidth="330.0" promptText="SELECT" style="">
+    <items>
+      <FXCollections fx:factory="observableArrayList">
+        <String fx:value="Item 1" />
+        <String fx:value="Item 2" />
+        <String fx:value="Item 3" />
+      </FXCollections>
+    </items>
+  </ComboBox>
+  <ComboBox fx:id="flowControl" layoutX="478.0" layoutY="513.0" prefHeight="50.0" prefWidth="330.0" promptText="SELECT" style="">
+    <items>
+      <FXCollections fx:factory="observableArrayList">
+        <String fx:value="Item 1" />
+        <String fx:value="Item 2" />
+        <String fx:value="Item 3" />
+      </FXCollections>
+    </items>
+  </ComboBox>
+      <Button fx:id="connectBtn" layoutX="834.0" layoutY="177.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="105.0" text="Connect">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="portStatus" alignment="CENTER" layoutX="455.0" layoutY="238.0" text="Port Ready">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="652.0" text="Copyright (c) SEIMITSU KOREA Co. Ltd All rights reserved." textFill="WHITE" />
+		<Label layoutX="873.0" layoutY="652.0" text="053.635.4342" textFill="WHITE" />
+		<ImageView fitHeight="65.0" fitWidth="273.0" layoutX="25.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@image/Magnescale.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="65.0" fitWidth="163.0" layoutX="766.0" layoutY="629.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@image/SEIMITUS.png" />
+			</image>
+		</ImageView>
+		<Label layoutX="292.0" layoutY="47.0" text="DATA LOGGER SYSTEM" textFill="WHITE">
+			<font>
+				<Font size="35.0" fx:id="x1" />
+			</font>
+		</Label>
+  </children>
+</AnchorPane>

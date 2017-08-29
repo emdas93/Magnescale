@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="content" fx:id="mainLayout" prefHeight="700.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+  <!-- TODO Add Nodes -->
+  <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="483.0" layoutX="27.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="970.0" />
+    <Label layoutX="292.0" layoutY="47.0" text="DATA LOGGER SYSTEM">
+      <font>
+        <Font size="35.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Button fx:id="setBtn" layoutX="690.0" layoutY="43.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="SET">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+    <Button fx:id="exitBtn" layoutX="911.0" layoutY="43.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="EXIT">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+    <Button fx:id="comBtn" layoutX="802.0" layoutY="43.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="COM">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+    <Label fx:id="timeLabel" layoutX="685.0" layoutY="106.0" text="2017년 07월 24일 11시 30분 17초">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="187.0" prefWidth="388.0" text="[1CH_DATA]">
+         <font>
+            <Font size="47.0" />
+         </font></Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="516.0" layoutY="187.0" prefWidth="388.0" text="[2CH_DATA]">
+         <font>
+            <Font size="47.0" />
+         </font></Label>
+    <TextField fx:id="ch1_textField" alignment="CENTER_RIGHT" layoutX="43.0" layoutY="294.0" prefHeight="131.0" prefWidth="388.0" promptText="" style="-fx-font-size: 70px;" text="0.0000" />
+    <TextField fx:id="ch2_textField" alignment="CENTER_RIGHT" layoutX="516.0" layoutY="294.0" prefHeight="131.0" prefWidth="388.0" style="-fx-font-size: 70px;" text="0.0000" />
+    <Text layoutX="435.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mm">
+         <font>
+            <Font size="39.0" />
+         </font></Text>
+    <Text layoutX="908.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mm">
+         <font>
+            <Font size="39.0" />
+         </font></Text>
+    <Label fx:id="ch1_label" alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="435.0" prefHeight="65.0" prefWidth="388.0" text="READY" textFill="#00000063">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font></Label>
+    <Label fx:id="ch2_label" alignment="CENTER" contentDisplay="CENTER" layoutX="518.0" layoutY="435.0" prefHeight="65.0" prefWidth="388.0" text="READY" textFill="#00000063">
+         <font>
+            <Font name="System Bold" size="54.0" />
+         </font></Label>
+    <Label fx:id="ch2_range" alignment="CENTER" contentDisplay="CENTER" layoutX="516.0" layoutY="254.0" prefHeight="31.0" prefWidth="388.0" text="LOW ~ HIGH" textFill="BLUE">
+      <font>
+        <Font size="26.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label fx:id="ch1_range" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="254.0" prefHeight="31.0" prefWidth="388.0" text="LOW ~ HIGH" textFill="BLUE">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Label layoutX="270.0" layoutY="652.0" text="Copyright (c) SEIMITSU KOREA Co. Ltd All rights reserved." textFill="BLACK" />
+		<Label layoutX="873.0" layoutY="652.0" text="053.635.4342" textFill="BLACK" />
+		<ImageView fitHeight="65.0" fitWidth="273.0" layoutX="25.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@image/Magnescale.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="65.0" fitWidth="163.0" layoutX="766.0" layoutY="629.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@image/SEIMITUS.png" />
+			</image>
+		</ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e3e32f" height="65.0" layoutX="27.0" layoutY="561.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="970.0" />
+      <Label contentDisplay="CENTER" layoutX="27.0" layoutY="527.0" prefHeight="34.0" prefWidth="970.0" text="DATA COUNT">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="578.0" text="TOTAL :" textFill="#22ff00">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="298.0" layoutY="578.0" text="OK :" textFill="#0004ff">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="545.0" layoutY="578.0" text="NG :" textFill="RED">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="resetBtn" layoutX="834.0" layoutY="569.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="154.0" text="RESET">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Label fx:id="okCount" layoutX="357.0" layoutY="581.0" text="0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalCount" layoutX="164.0" layoutY="581.0" text="0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngCount" layoutX="612.0" layoutY="581.0" text="0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+  </children>
+</AnchorPane>

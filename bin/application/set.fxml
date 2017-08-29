@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="content" prefHeight="700.0" prefWidth="1024.0" style="-fx-background-color:black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SetController">
+	<!-- TODO Add Nodes -->
+	<children>
+		<Region layoutX="37.0" layoutY="129.0" prefHeight="471.0" prefWidth="944.0" style="-fx-border-color:white;" />
+		<TableView fx:id="dataTable" layoutX="51.0" layoutY="196.0" prefHeight="387.0" prefWidth="917.0">
+			<columns>
+				<TableColumn fx:id="titleNameColumn" prefWidth="155.0" sortable="false" style="-fx-text-align:center;&#10;-fx-text-fill: blue;" text="Title Name" />
+				<TableColumn fx:id="upLimitValueColumn" editable="true" prefWidth="380.0" sortable="false" style="-fx-text-align:center;&#10;-fx-text-fill: blue;" text="UP Limit Value" />
+				<TableColumn fx:id="lowLimitValueColumn" prefWidth="380.0" sortable="false" style="-fx-text-align:center;&#10;-fx-text-fill: blue;" text="LOW Limit Value" />
+			</columns>
+		</TableView>
+		<Label layoutX="51.0" layoutY="135.0" text="LIMIT VALUES SETTING" textFill="WHITE" underline="false">
+			<font>
+				<Font name="System Bold" size="33.0" />
+			</font>
+		</Label>
+		<Button fx:id="saveBtn" layoutX="705.0" layoutY="44.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="SAVE">
+			<font>
+				<Font size="25.0" />
+			</font>
+		</Button>
+		<Button fx:id="exitBtn" layoutX="861.0" layoutY="44.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="EXIT">
+			<font>
+				<Font size="25.0" />
+			</font>
+		</Button>
+		<Label layoutX="245.0" layoutY="652.0" text="Copyright (c) SEIMITSU KOREA Co. Ltd All rights reserved." textFill="WHITE" />
+		<Label layoutX="848.0" layoutY="652.0" text="053.635.4342" textFill="WHITE" />
+		<ImageView fitHeight="65.0" fitWidth="273.0" layoutX="25.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@image/Magnescale.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="65.0" fitWidth="163.0" layoutX="745.0" layoutY="629.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@image/SEIMITUS.png" />
+			</image>
+		</ImageView>
+		<Label layoutX="292.0" layoutY="47.0" text="DATA LOGGER SYSTEM" textFill="WHITE">
+			<font>
+				<Font size="35.0" fx:id="x1" />
+			</font>
+		</Label>
+	</children>
+</AnchorPane>
